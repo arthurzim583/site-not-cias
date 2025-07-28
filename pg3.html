@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<head>
+    <title>B404Noticias</title>
+</head>
+
+<body>
+    <header id="cabeza">
+        <img class="logo" src="https://i.ibb.co/99kgWHxm/Captura-de-tela-2025-07-07-170249-1.png"
+            alt="https://www.canva.com/design/DAGsHm4Yya0/T_3ZoPEqpusnE23Vosg-PQ/edit?utm_content=DAGsHm4Yya0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+    </header>
+    <nav id="navezao">
+        <ul>
+            <li><a href="pg1.html">Página Inicial</a></li>
+            <li><a href="pg2.html">Política</a></li>
+            <li><a href="pg3.html">Tecnologia</a></li>
+            <li><a href="pg4.html">Economia</a></li>
+            <li><a href="pg5.html">Novidades</a></li>
+            <li><a href="pg6.html">Sobre</a></li>
+        </ul>
+    </nav>
+    <div class="config">
+        <button class="btconf">⚙️</button>
+        <nav class="conftabel">
+            <ul>
+                <li class="ctxt">configurações</li>
+                <li>
+                    <label for="checatmid" id="labtem">
+                        <span class="icone"></span> Modo claro/escuro
+                    </label>
+                    <input type="checkbox" id="checatmid">
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="fila">
+        <div class="cartlea">
+            <img src="https://i.ibb.co/svvC8ndv/entenda-como-funciona-o-chip-cerebral-da-neuralink-empresa-de-elon-musk.webp">
+            <p class="pe">Elon musk lança chip neural que permite controlar dispositivos apenas com o pensamento</p>
+        </div>
+        <div class="cartlea">
+            <img src="https://i.ibb.co/QFZ8wHkY/man-staring-screen-computer-89650241.jpg">
+            <p class="pe">Dados apontão uso mais frequente de telas nos últimos anos</p>
+        </div>
+        <div class="cartlea">
+            <img src="https://i.ibb.co/qFN3pFh9/images-q-tbn-ANd9-Gc-QH4cfdg-Cp4-KY0gu-OMz8-IZzo-XSY4-NRu-V-Rd-Kg-s.jpg">
+            <p class="pe">Testes para robos ultra inteligentes começam</p>
+        </div>
+        <div class="cartlea">
+            <img src="https://i.ibb.co/9k4GLvKg/Skynet-logo.jpg">
+            <p class="pe">Novo sistema de defesa e automação para o exercíto é criado, seu nome é Skynet</p>
+        </div>
+         <h1 class="pp1">Tecnologia</h1>
+</body>
+<style>
+    body {
+        margin: 0;
+    }
+    .pp1 {
+        font-size: x-large;
+        color: rgb(0, 0, 0);
+        position: absolute;
+        left: 48%;
+        top: 10%;
+        color: rgb(255, 255, 255);
+    }
+
+    header {
+        background-color: rgb(23, 63, 197);
+    }
+
+    .logo:hover {
+        cursor: pointer;
+        content: url("https://i.ibb.co/d48kMmJR/Captura-de-tela-2025-07-07-170321-1.png");
+    }
+    .lol .logo:hover{
+        content: url("https://i.ibb.co/xSX6Pgxz/Captura-de-tela-2025-07-07-205835-1.png");
+    }
+    #navezao ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    #navezao {
+        background-color: rgb(23, 63, 197);
+        width: 180px;
+        margin-top: -5px;
+        overflow: hidden;
+        height: 0;
+        transition: height 0.5s ease;
+        font-family: sans-serif;
+
+    }
+
+    #navezao li {
+        border: 3px solid rgb(23, 63, 197);
+        background-color: rgb(255, 255, 255);
+        width: 120px;
+        margin: 5px;
+        padding: 10px;
+    }
+
+    #navezao li:hover {
+        transform: scale(1.2);
+    }
+
+    #navezao li a {
+        text-decoration: none;
+        color: rgb(23, 63, 197);
+    }
+
+    #navezao li a:hover {
+        color: rgb(0, 0, 0);
+    }
+
+    .btconf {
+        padding: 15px;
+        background-color: rgb(0, 44, 187);
+        border: 3px solid rgb(20, 35, 255);
+        position: absolute;
+        top: 5%;
+        left: 90%;
+        cursor: pointer;
+    }
+
+    .conftabel {
+        background-color: rgb(255, 255, 255);
+        width: 210px;
+        display: none;
+        position: absolute;
+        top: 5%;
+        left: 70%;
+    }
+
+    .conftabel ul {
+        list-style: none;
+        color: rgb(17, 120, 255);
+        font-size: larger;
+    }
+
+    .lol .icone::before {
+        content: "🌙 ";
+    }
+
+    .icone::before {
+        content: "🌞 ";
+    }
+
+    .fila {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        margin-top: 50px;
+    }
+
+    .cartlea {
+        background-color: transparent;
+        color: rgb(38, 23, 255);
+        text-align: center;
+    }
+
+    .cartlea img {
+        width: 100%;
+        border-radius: 8px;
+        object-fit: cover;
+        width: 300px;
+        height: 200px;
+    }
+
+    .cartlea:hover {
+        transform: scale(1.2);
+    }
+
+    .pe {
+        margin-top: 8px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .lol {
+        background-color: rgb(18, 18, 18);
+        color: rgb(255, 255, 255);
+    }
+
+    .lol header {
+        background-color: #1e1e1e;
+    }
+
+    .lol #navezao {
+        background-color: rgb(30, 30, 30);
+    }
+
+    .lol #navezao li {
+        background-color: rgb(51, 51, 51);
+        border-color: rgb(68, 68, 68);
+    }
+
+    .lol #navezao li a {
+        color: rgb(255, 215, 0);
+    }
+
+    .lol #navezao li a:hover {
+        color: rgb(255, 255, 255);
+    }
+
+    .lol .btconf {
+        background-color: rgb(51, 51, 51);
+        border-color: rgb(85, 85, 85);
+    }
+
+    .lol .conftabel {
+        background-color: rgb(30, 30, 30);
+    }
+
+    .lol .conftabel ul {
+        color: #fff;
+    }
+
+    .lol .cartlea {
+        color: rgb(164, 232, 255);
+    }
+</style>
+<script>
+    const he = document.getElementById("cabeza");
+    const na = document.getElementById("navezao");
+
+    he.addEventListener("click", function () {
+        if (na.style.height === "0px" || na.style.height === "") {
+            na.style.height = na.scrollHeight + "px";
+        } else {
+            na.style.height = "0px";
+        }
+    });
+    const btnConf = document.querySelector(".btconf");
+    const contabl = document.querySelector(".conftabel");
+
+    btnConf.addEventListener("click", function () {
+        if (contabl.style.display === "block") {
+            contabl.style.display = "none";
+        } else {
+            contabl.style.display = "block";
+        }
+    });
+
+    const muda = document.getElementById("checatmid");
+
+    if (localStorage.getItem("theme") === "lua") {
+        document.body.classList.add("lol");
+        muda.checked = true;
+    }
+
+    muda.addEventListener("change", () => {
+        document.body.classList.toggle("lol");
+        localStorage.setItem("theme", muda.checked ? "lua" : "luz");
+    });
+</script>
